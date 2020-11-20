@@ -1,7 +1,9 @@
 // const express = require("express");
 // const app = express();
+const express = require('express');
+const app = express();
 
-const app = require('express')();
+// const app = require('express')();
 const http = require('http').createServer(app);
 // this make socket enabled server
 const io = require('socket.io')(http);
@@ -17,7 +19,8 @@ io.on("connection",function(socket){
         socket.broadcast.emit("onmm",point);
     })
 })
-app.use(express.static("client"));
+// app.use(express.static("client"));
+app.use(express.static("client"))
 // app.get("/",function(req,res){
 //      res.send("<h1>Welcome to HomePage</h1>");
 // })
