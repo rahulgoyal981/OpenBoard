@@ -17,7 +17,7 @@ io.on("connection",function(socket){
         socket.broadcast.emit("onmm",point);
     })
 })
-
+app.use(express.static("client"));
 app.get("/",function(req,res){
      res.send("<h1>Welcome to HomePage</h1>");
 })

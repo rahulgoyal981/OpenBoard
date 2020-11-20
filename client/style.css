@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0px;
+    padding: 0px;
+}
+.tool-panel{
+    height: 70px;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+}
+/* .drawing-area{
+    height: calc(100vh - 70px);
+} */
+canvas{
+    height: 100%;
+    width: 100%;
+}
+.tool-bar{
+    width: 80%;
+    height: 86%;
+    /* border: 1px solid; */
+    /* border-radius: 5%; */
+    background-color: lightcoral;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.tool-img{
+    height: 85%;
+    width: 27%;
+}
+.tool{
+    position: relative;
+}
+.tool-options{
+     height: 6rem;
+     width: 8rem;
+     background-color: lightcyan;
+     display: none;
+     position: absolute;
+     top: 63px;
+     left: -29px;
+}
+.show{
+    display: block;
+}
+
+.slider{
+    height: 34%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#eraser-options{
+    height: 3rem;
+}
+#eraser-options .slider{
+    height: 100%;
+}
+input[type='range']{
+    width: 70%;
+}
+.colors{
+    height: 66%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.color{
+    height: 61%;
+    width: 30%;
+    border-radius: 50%;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.stickyPad{
+    height: 14rem;
+    width: 16rem;
+    position: absolute;
+    top: 34vh;
+    left: 20vw;
+}
+.navbar{
+    height: 16%;
+    background: sandybrown;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+}
+.container{
+    height: calc(14rem - 16%);
+}
+textarea{
+    height: 100%;
+    width: 100%;
+}
+.close{
+    height: 60%;
+    width: 9%;
+    background: red;
+    margin-right: 0.4rem;
+    border-radius: 50%;
+}
+.minimize{
+    height: 60%;
+    width: 9%;
+    background: green;
+    /* margin-right: 0.4rem; */
+    border-radius: 50%;
+}
+.upload-img{
+    height: 100%;
+    width: 100%;
+}
