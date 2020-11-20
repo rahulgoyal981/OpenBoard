@@ -18,9 +18,9 @@ io.on("connection",function(socket){
     })
 })
 
-// app.get("/home",function(req,res){
-//      res.send("<h1>Welcome to HomePage</h1>");
-// })
+app.get("/",function(req,res){
+     res.send("<h1>Welcome to HomePage</h1>");
+})
 let port = process.env.PORT || 3000;
 http.listen(port,function(){
     console.log("server started at port 3000");
